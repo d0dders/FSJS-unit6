@@ -14,6 +14,22 @@
                 "./images/unit1small.png",
                 "./images/unit1large.png"
             ]
+        },
+        {
+            "id": 1,
+            "project_name": "Movie Quote Generator2",
+            "description": "A website that generates random movie quotes with movie ratings.",
+            "technologies": [
+                "JavaScript",
+                "CSS"
+            ],
+            "live_link": "https://www.dodkins.net/FSJS-unit1/",
+            "github_link": "https://github.com/d0dders/FSJS-unit1",
+            "image_urls": [
+                "./images/unit1small.png",
+                "./images/unit1large.png"
+            ]
         }
+
     ]
 }

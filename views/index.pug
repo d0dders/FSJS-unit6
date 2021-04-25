@@ -25,4 +25,9 @@ block content
           a(href='#')
             img.thumbnail(src='https://placehold.it/550x550', alt='')
             h5 My Site
+      each project in projects
+        .cell
+          a(href=`/project/${project.id}`)
+            img.thumbnail(src=`/static/images/unit${project.id}small.png`)
+            h5= project.project_name
 
