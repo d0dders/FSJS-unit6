@@ -15,7 +15,26 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project/:id', (req, res) => {
-    res.render('project', {project: data.projects[req.params.id]});
+    if(data.projects[req.params.id]){
+        res.render('project', {project: data.projects[req.params.id]});
+    } else {
+        const err = new Error("Whatever you're looking for, it isn't here!");
+        err.status = 404;
+        throw err;
+    }
+});
+
+app.use((req, res, next) => {
+    const err = new Error("Whatever you're looking for, it isn't here!");
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    err.status = err.status || 500;
+    err.message = err.message || "Something unexpected happened. Please try again";
+    res.status(err.status);
+    console.error(`${err.status}: ${err.message}`);
 });
 
 app.listen(port, () => {
