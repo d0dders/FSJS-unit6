@@ -24,6 +24,14 @@ app.get('/project/:id', (req, res) => {
     }
 });
 
+/**
+ * For testing error handling
+ */
+ app.use('/500', (req, res, next) => {
+    const err = new Error();
+    next(err);
+})
+
 app.use((req, res, next) => {
     const err = new Error("Whatever you're looking for, it isn't here!");
     err.status = 404;
@@ -35,6 +43,11 @@ app.use((err, req, res, next) => {
     err.message = err.message || "Something unexpected happened. Please try again";
     res.status(err.status);
     console.error(`${err.status}: ${err.message}`);
+    if(err.status === 404){
+        res.render('page-not-found', {err});
+    } else {
+        res.render('error', {err});
+    }
 });
 
 app.listen(port, () => {

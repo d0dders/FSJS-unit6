@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+    
+    article.portfolio-about
+        .inner-wrapper.flex-row-wrap
+            .about-intro-box.box
+                h1 #{err.status}: #{err.message}
+                .project-img-box.box
+                    img.project-img(src="/static/images/404.gif", alt="404 image")
