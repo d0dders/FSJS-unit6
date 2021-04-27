@@ -17,34 +17,54 @@
         },
         {
             "id": 1,
-            "project_name": "Movie Quote Generator2",
-            "description": "A website that generates random movie quotes with movie ratings.",
+            "project_name": "Learning Journal",
+            "description": "A social learning journal built using Python, Flask and PeeWee ORM",
             "technologies": [
-                "JavaScript",
-                "CSS"
+                "Python",
+                "Flask"
             ],
-            "live_link": "https://www.dodkins.net/FSJS-unit1/",
-            "github_link": "https://github.com/d0dders/FSJS-unit1",
+            "live_link": "https://learning-journal-flask.herokuapp.com/entries",
+            "github_link": "https://github.com/d0dders/learning-journal",
             "image_urls": [
-                "/images/unit0small.png",
-                "/images/unit0large.png"
+                "/images/journalsmall.png",
+                "/images/journallarge1.png",
+                "/images/journallarge2.png"
             ]
         },
         {
-            "id": 1,
-            "project_name": "Movie Quote Generator3",
-            "description": "A website that generates random movie quotes with movie ratings.",
+            "id": 2,
+            "project_name": "Employee Directory",
+            "description": "A mockup of an employee directory made to look like it belongs to Hawkins National Laboratory. Fetches user data from randomuser.me.",
             "technologies": [
                 "JavaScript",
+                "HTML",
                 "CSS"
             ],
-            "live_link": "https://www.dodkins.net/FSJS-unit1/",
-            "github_link": "https://github.com/d0dders/FSJS-unit1",
+            "live_link": "https://www.dodkins.net/FEWD-unit8/",
+            "github_link": "https://github.com/d0dders/FEWD-unit8",
             "image_urls": [
-                "/images/unit0small.png",
-                "/images/unit0large.png"
+                "/images/employeesmall.png",
+                "/images/employeelarge.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Wizarding Words Game",
+            "description": "A 'Harry Potter' themed Wheel of Fortune game. Can you remember the names of your spells, or will you be sent to Professor Mcgonagall's office!",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://www.dodkins.net/FEWD-unit6/",
+            "github_link": "https://github.com/d0dders/FEWD-unit6",
+            "image_urls": [
+                "/images/wizardingwordssmall.png",
+                "/images/wizardingwordslarge1.png",
+                "/images/wizardingwordslarge2.png"
             ]
         }
+
 
     ]
 }
