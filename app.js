@@ -1,8 +1,8 @@
 const express = require('express');
 const port = 3000;
 const data = require('./data.json');
-
 const app = express();
+
 app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
@@ -32,6 +32,9 @@ app.get('/project/:id', (req, res) => {
     next(err);
 })
 
+/**
+ * Handle requests to unexpected routes
+ */
 app.use((req, res, next) => {
     const err = new Error("Whatever you're looking for, it isn't here!");
     err.status = 404;
